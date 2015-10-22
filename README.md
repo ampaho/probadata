@@ -21,6 +21,38 @@ $ python setup.py install
 
 #Demo
 
+##Bloom Filter
+    from probadata.bloomfilter import BloomFilter, ScalableBloomFilter
+    
+    b = BloomFilter(capacity=100)
+    b.add("Hello")
+    
+    #for a scalable bf, no need to specify the capacity
+    sb = ScalableBloomFilter()
+    sb.add("Hi")
+
+##LoLog
+    from probadata.loglog import LogLog, SuperLogLog, HyperLogLog
+    
+    #could be any loglog data structure
+    l = HyperLogLog(maxCardinality=200000, error_rate=.005)
+    l.add("oops")
+    l.add("come")
+    l.getNumberEstimate()
+
+##Count-Min Sketch
+    from probadata.countminsketch import CountMinSketch
+    sk = CountMinSketch(1000, 10)
+    sk.add(2, value=456)
+    
+    #CountMinSketch support indexing in read-only
+    sk[2]
+    
+    #or you can use the query method
+    sk.query(2)
+    
+    
+    
 
 
 
