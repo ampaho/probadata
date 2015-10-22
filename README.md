@@ -14,7 +14,9 @@ bitarray is required and will be automatically installed along with probadata
 #Installation 
 
 $ git clone https://github.com/ampaho/probadata.git
+
 $ cd probadata
+
 $ python setup.py install
 
 #Demo
