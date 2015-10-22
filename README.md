@@ -1,4 +1,4 @@
-# probadata
+# probadata (Probabilistic Data Structures)
 Python package for probabilistic data structures
 
 
