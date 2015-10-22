@@ -42,6 +42,7 @@ $ python setup.py install
 
 ##Count-Min Sketch
     from probadata.countminsketch import CountMinSketch
+    
     sk = CountMinSketch(1000, 10)
     sk.add(2, value=456)
     
