@@ -1,4 +1,4 @@
-# probadata (Probabilistic Data Structures)
+## probadata (Probabilistic Data Structures)
 
 * <a href="#requirements">Requirements</a>
 * <a href="#installation">Installation</a>
@@ -14,10 +14,10 @@ For now, probadata implements:
 * Count-Min Sketch
 
 
-#Requirements
+##Requirements
 bitarray is required and will be automatically installed along with probadata
 
-#Installation 
+##Installation 
 
 $ git clone https://github.com/ampaho/probadata.git
 
@@ -25,9 +25,9 @@ $ cd probadata
 
 $ python setup.py install
 
-#Demo
+##Demo
 
-##Bloom Filter
+###Bloom Filter
     from probadata.bloomfilter import BloomFilter, ScalableBloomFilter
     
     b = BloomFilter(capacity=100)
@@ -37,7 +37,7 @@ $ python setup.py install
     sb = ScalableBloomFilter()
     sb.add("Hi")
 
-##LoLog
+###LoLog
     from probadata.loglog import LogLog, SuperLogLog, HyperLogLog
     
     #could be any loglog data structure
@@ -46,7 +46,7 @@ $ python setup.py install
     l.add("come")
     l.getNumberEstimate()
 
-##Count-Min Sketch
+###Count-Min Sketch
     from probadata.countminsketch import CountMinSketch
     
     sk = CountMinSketch(1000, 10)
@@ -59,7 +59,9 @@ $ python setup.py install
     sk.query(2)
     
     
-    
+##Todo
+
+* Add an interface with these methods (add, delete, join, query, intersect) to all the probabilistic data structures
 
 
 
