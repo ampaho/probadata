@@ -62,7 +62,8 @@ $ python setup.py install
 ##Todo
 
 * Add an interface with these methods (add, delete, join, query, intersect) to all the probabilistic data structures
-
+* SkipList implementation
+* Treap implementation
 
 
 
