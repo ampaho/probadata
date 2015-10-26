@@ -9,12 +9,7 @@ __author__  = "Olalekan H. ABOU BAKAR <houdan@jolome.com>"
 
 class CountMinSketch(object):
     """
-    A class for counting hashable items using the Count-min Sketch strategy.
-    It fulfills a similar purpose than `itertools.Counter`.
-    The Count-min Sketch is a randomized data structure that uses a constant
-    amount of memory and has constant insertion and lookup times at the cost
-    of an arbitrarily small overestimation of the counts.
-    It has two parameters:
+    2 parameters:
      - `m` the size of the hash tables, larger implies smaller overestimation
      - `d` the amount of hash tables, larger implies lower probability of
            overestimation.
@@ -45,11 +40,6 @@ class CountMinSketch(object):
         self.d = d
         self.n = 0
         self.tables = []
-        
-        #num_slices = int(ceil(log(1.0 / error_rate, 2)))
-        #bits_per_slice = int(ceil(
-        #    (capacity * abs(log(error_rate))) /
-        #    (num_slices * (log(2) ** 2))))
         
         
         for _ in xrange(d):
