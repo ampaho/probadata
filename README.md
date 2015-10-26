@@ -64,6 +64,8 @@ $ python setup.py install
 * Add an interface with these methods (add, delete, join, query, intersect) to all the probabilistic data structures
 * SkipList implementation
 * Treap implementation
+* Kinetic hanger/ Kinetic heater
+* Quotient filter
 
 
 
