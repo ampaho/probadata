@@ -3,6 +3,7 @@
 * <a href="#requirements">Requirements</a>
 * <a href="#installation">Installation</a>
 * <a href="#demo">Demo</a>
+* <a href="#todo">Todo</a>
 
 Python package for probabilistic data structures
 
