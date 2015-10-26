@@ -1,4 +1,9 @@
 # probadata (Probabilistic Data Structures)
+
+* <a href="#requirements">Requirements</a>
+* <a href="#installation">Installation</a>
+* <a href="#demo">Demo</a>
+
 Python package for probabilistic data structures
 
 
