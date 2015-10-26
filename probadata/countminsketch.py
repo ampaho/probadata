@@ -23,9 +23,9 @@ class CountMinSketch(object):
         print sketch[tuple()]         # prints 1
         print sketch[1]               # prints 123
         print sketch["non-existent"]  # prints 0
+    Validation not taken into account.
     Note that this class can be used to count *any* hashable type, so it's
-    possible to "count apples" and then "ask for oranges". Validation is up to
-    the user.
+    possible to "count apples" and then "ask for oranges".
     """
 
     def __init__(self, m, d):
@@ -72,7 +72,7 @@ class CountMinSketch(object):
 
     def __len__(self):
         """
-        The amount of things counted. Takes into account that the `value`
+        Amount of things counted. Takes into account that the `value`
         argument of `add` might be different from 1.
         """
         return self.n
